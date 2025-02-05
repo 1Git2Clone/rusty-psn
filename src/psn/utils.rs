@@ -30,7 +30,7 @@ pub fn get_platform_variant(title_id: &str) -> Option<PlaformVariant> {
         return Some(PlaformVariant::PS4);
     }
 
-    return None
+    None
 }
 
 pub fn get_update_info_url(title_id: &str, platform_variant: PlaformVariant) -> Result<String, UpdateError> {
