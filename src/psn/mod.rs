@@ -279,7 +279,6 @@ impl PackageInfo {
             .unwrap_or_else(|| String::from("update.pkg"))
         ;
 
-        let download_path = download_path;
         info!("Response received, file name is {file_name}");
 
         let mut pkg_file = crate::utils::create_pkg_file(download_path, &serial, &title, &file_name).await?;
